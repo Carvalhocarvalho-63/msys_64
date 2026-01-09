@@ -13,10 +13,11 @@ int main ()  {
     char codigo2[10], estado2[15], cidade2[15];
     int populacao2, pontosTuristicos2;
     float area2, pib2 ; 
-    float densidade2, renda2
+    float densidade2, renda2;
     
-    //--- carta 1 ---
-    printf("\n--- carta 1 ---\n");
+    
+     // --- carta 1 
+    printf ("\n --- carta 1 --- \n");
     printf("codigo: ");
     scanf ("%s", codigo1);
 
@@ -32,7 +33,7 @@ int main ()  {
     printf("area: ");
     scanf ("%f", &area1);
 
-    printf("PIB: " );
+    printf("pib: " );
     scanf ("%f", &pib1);
 
     printf("pontos turisticos: ");
@@ -40,7 +41,7 @@ int main ()  {
 
     // calculos carta 1
     densidade1 = populacao1 / area1;
-    renda1     = pib / pontosTuristicos1;
+    renda1   =   pib1 / pontosTuristicos1;
 
     //--- carta 2 ---
 
@@ -69,7 +70,7 @@ int main ()  {
 
     // calculos carta2
     densidade2 = populacao2 / area2;
-    renda2  =    pib2 / populacao2; 
+    renda2     = pib2 / populacao2; 
 
     // --- mostrar resultado ---
 
@@ -83,8 +84,9 @@ int main ()  {
     printf("\n[carta 2]\n");
     printf ("%s - %s (%s)\n", codigo2, estado2, cidade2);
     printf("densidade populacional: %.2f \n", densidade2);
-    printf("renda per capita: %.2f \n", renda2)
+    printf("renda per capita: %.2f \n", renda2);
 
+    
     return 0;
 
 }
