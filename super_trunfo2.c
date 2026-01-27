@@ -39,7 +39,7 @@ int main ()  {
     scanf ("%f", &pib1);
 
     printf("pontos turisticos: ");
-    scanf ("%d", &pontosTuristicos1);
+    scanf ("%ld", &pontosTuristicos1);
 
     // calculos carta 1
     densidade1 = populacao1 / area1;
@@ -75,7 +75,7 @@ int main ()  {
     scanf ("%f", &pib2);
 
     printf("pontos turisticos: ");
-    scanf ("%d", &pontosTuristicos2);
+    scanf ("%ld",  &pontosTuristicos2);
 
     // calculos carta2
     densidade2 = populacao2 / area2;
@@ -119,4 +119,6 @@ else if (populacao2 > populacao1) {
 }
 else {
     printf("Empate! As duas cartas tem a mesma populacao.\n");
+}
+             return 0;
 }
