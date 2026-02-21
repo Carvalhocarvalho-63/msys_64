@@ -1,4 +1,4 @@
-#include <stdio.h>
+include <stdio.h>
 int main () {
     // movimento da torre (for)
     // torre: 5 casas para direita
@@ -33,5 +33,23 @@ int main () {
 
     }
     while(passos <= 8);
+
+    // movimento do cavalo em L (loops aninhados)
+    // cavalo: 2 casaspara baixo e uma casa para a esquerda
+    // o primeiro loop (for)controla o movimento vertical(2casas para bbaixo)
+    // o segundo loop (while), aninhado controla o movimento horizontal(uma casa para esquerda)
+
+     int casasBaixo = 2 ;
+     int casasEsquerda = 1;
+     printf ("movimento do cavalo: \n");
+
+     // loop externo(for)- movimento vertical
+
+     int contadorHorizontal = 1;
+     while (contadorHorizontal <= casasEsquerda) {
+        printf ("Esquerda\n");
+        contadorHorizontal++;
+     }
+      
     return 0;
 }
