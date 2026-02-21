@@ -1,4 +1,4 @@
-include <stdio.h>
+include  <stdio.h>
 int main () {
     // movimento da torre (for)
     // torre: 5 casas para direita
@@ -35,8 +35,8 @@ int main () {
     while(passos <= 8);
 
     // movimento do cavalo em L (loops aninhados)
-    // cavalo: 2 casaspara baixo e uma casa para a esquerda
-    // o primeiro loop (for)controla o movimento vertical(2casas para bbaixo)
+    // cavalo: 2 casas para baixo e uma casa para a esquerda
+    // o primeiro loop (for)controla o movimento vertical(2 casas para baixo)
     // o segundo loop (while), aninhado controla o movimento horizontal(uma casa para esquerda)
 
      int casasBaixo = 2 ;
